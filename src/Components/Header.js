@@ -7,7 +7,7 @@ class Header extends Component {
         <div>
           <Link to="/" >Home</Link>
           <Link >All Pokemons</Link>
-          <Link>About</Link>
+          <Link to="/about">What is a Pokedex?</Link>
         </div>
       )
     }

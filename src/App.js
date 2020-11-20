@@ -6,6 +6,7 @@ import pokemons from './data';
 import Pokedex from './Pages/Pokedex';
 import PageNotFound from './Pages/PageNotFound';
 import PokemonDetails from './Pages/PokemonDetails';
+import PokedexAbout from './Pages/PokedexAbout';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Switch>
         <Route path="/" render={() => <Pokedex pokemons={pokemons}/>} exact />
         <Route path="/pokemon/:id" component={PokemonDetails} />
+        <Route path="/about" component={PokedexAbout} />
         <Route path="*" component={PageNotFound} />
       </Switch>
     </BrowserRouter>              
